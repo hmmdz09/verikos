@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231E88E5'><path d='M12 3L2 12h3v8h6v-5h2v5h6v-8h3L12 3z'/><circle cx='18' cy='6' r='4' fill='%2310B981'/><path d='M16.5 6l1 1 2-2' stroke='white' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VeriKos - Kos Terverifikasi Sekitar UPI Bandung | Bebas Penipuan & 0% Komisi</title>
+    <meta name="description" content="Platform agregator kos terverifikasi di sekitar Universitas Pendidikan Indonesia (UPI) Bandung. 100% audit fisik langsung oleh surveyor, 0% potongan komisi untuk pemilik, dan direct chat WhatsApp." />
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN with configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#F0F7FF',
+                100: '#E0EFFF',
+                200: '#BAE0FD',
+                300: '#7CC4FA',
+                400: '#38A4F4',
+                500: '#1E88E5', /* Primary Trust Blue */
+                600: '#1565C0',
+                700: '#0D47A1',
+                800: '#0A3882',
+                900: '#07275E',
+              },
+              trust: {
+                blue: '#1E88E5',
+                dark: '#0f4c81',
+                light: '#e8f3fc',
+              },
+              emerald: {
+                50: '#ecfdf5',
+                100: '#d1fae5',
+                500: '#10b981', /* WhatsApp & 0% Commission */
+                600: '#059669',
+                700: '#047857',
+              }
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            },
+            boxShadow: {
+              'soft': '0 4px 20px -2px rgba(15, 23, 42, 0.08)',
+              'card': '0 10px 30px -4px rgba(15, 23, 42, 0.06), 0 4px 10px -2px rgba(15, 23, 42, 0.03)',
+              'glow': '0 0 20px rgba(30, 136, 229, 0.35)',
+              'glow-green': '0 0 20px rgba(16, 185, 129, 0.35)',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-brand-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
